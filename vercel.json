@@ -10,7 +10,6 @@
     "DB_HOST": "ep-restless-morning-a1d1h9yu.ap-southeast-1.aws.neon.tech",
     "DB_PORT": "5432",
     "DB_USERNAME": "neondb_owner",
-    "DB_PASSWORD": "ErSdgX3aQDM7",
     "DB_NAME": "trapp-neon-db"
   },
   "routes": [
