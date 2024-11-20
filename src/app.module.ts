@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { FriendsModule } from './friends/friends.module';
-import { Friend } from './friends/friend.entity';
+import { FriendDetails } from './friends/friend.details.entity';
 
 @Module({
   imports: [
@@ -19,13 +19,13 @@ import { Friend } from './friends/friend.entity';
         username: configService.get('DB_USERNAME'),
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_NAME'),
-        entities: [Friend],
+        entities: [FriendDetails],
         synchronize: true,
         ssl: true,
       }),
       inject: [ConfigService],
     }),
-    TypeOrmModule.forFeature([Friend]),
+    TypeOrmModule.forFeature([FriendDetails]),
     FriendsModule,
   ],
 })

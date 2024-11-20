@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class Friend {
+export class FriendDetails {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -10,4 +10,7 @@ export class Friend {
 
   @Column()
   size: string;
+
+  @Column()
+  email: string;
 }
