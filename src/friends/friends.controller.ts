@@ -20,6 +20,7 @@ export class FriendsController {
       name: friend.name,
       size: friend.size,
       email: friend.email,
+      priceRange: friend.priceRange,
     }));
   }
 }
