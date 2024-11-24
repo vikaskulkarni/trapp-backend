@@ -1,0 +1,9 @@
+{
+  "type": "postgres",
+  "url": "postgres://u2uuu3ra9g0gqg:pfd7d8be34ff2b59876e781b5fcd17d1e17e1df30c247bd673fe89118b465fb69@c9mq4861d16jlm.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/dc8lbl23g19vs9",
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "synchronize": true,
+  "ssl": {
+    "rejectUnauthorized": false
+  }
+}
