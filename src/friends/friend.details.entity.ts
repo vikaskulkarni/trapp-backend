@@ -1,4 +1,9 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+} from 'typeorm';
 
 @Entity()
 export class FriendDetails {
@@ -16,4 +21,7 @@ export class FriendDetails {
 
   @Column({ nullable: true })
   priceRange: string | null;
+
+  @CreateDateColumn()
+  createdAt: Date;
 }

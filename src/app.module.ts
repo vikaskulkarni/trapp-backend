@@ -14,17 +14,11 @@ import { Slogan } from './slogan/slogan.entity';
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
-      useFactory: (configService: ConfigService) => ({
+      useFactory: () => ({
         type: 'postgres',
         url: process.env.DATABASE_URL,
-        // host: configService.get('DB_HOST'),
-        // port: +configService.get<number>('DB_PORT'),
-        // username: configService.get('DB_USERNAME'),
-        // password: configService.get('DB_PASSWORD'),
-        // database: configService.get('DB_NAME'),
         entities: [FriendDetails, Slogan],
         synchronize: true,
-        // ssl: true,
         ssl: {
           rejectUnauthorized: false,
         },

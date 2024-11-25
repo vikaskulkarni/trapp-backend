@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Put, Body, Param } from '@nestjs/common';
 import { SloganService } from './slogan.service';
 import { Slogan } from './slogan.entity';
+import { CreateSloganDto } from './slogan.dto';
 
 @Controller('slogans')
 export class SloganController {
@@ -17,8 +18,10 @@ export class SloganController {
   }
 
   @Post()
-  create(@Body('slogan') slogan: string): Promise<Slogan | { error: string }> {
-    return this.sloganService.create(slogan);
+  create(
+    @Body() createSloganDto: CreateSloganDto,
+  ): Promise<Slogan | { error: string }> {
+    return this.sloganService.create(createSloganDto);
   }
 
   @Put(':id')

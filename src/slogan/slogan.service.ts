@@ -2,6 +2,8 @@ import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Slogan } from './slogan.entity';
+import { updateJsonFile } from 'src/utility/jsonFileUpdater';
+import { CreateSloganDto } from './slogan.dto';
 
 @Injectable()
 export class SloganService {
@@ -11,19 +13,30 @@ export class SloganService {
   ) {}
 
   findAll(): Promise<Slogan[]> {
-    return this.slogansRepository.find();
+    return this.slogansRepository.find({
+      order: {
+        likes: 'DESC',
+      },
+    });
   }
 
   findOne(id: number): Promise<Slogan> {
     return this.slogansRepository.findOneBy({ id });
   }
 
-  async create(slogan: string): Promise<Slogan | { error: string }> {
+  async create(
+    createSloganDto: CreateSloganDto,
+  ): Promise<Slogan | { error: string }> {
     const sloganCount = await this.slogansRepository.count();
     if (sloganCount > 50) {
       return { error: 'Only 50 slogans are allowed' };
     }
-    const newSlogan = this.slogansRepository.create({ slogan, likes: 0 });
+    const newSlogan = this.slogansRepository.create({
+      slogan: createSloganDto.slogan,
+      likes: 0,
+    });
+    const { id, ...sanitizedSlogan } = newSlogan;
+    updateJsonFile('slogans', sanitizedSlogan);
     return this.slogansRepository.save(newSlogan);
   }
 
