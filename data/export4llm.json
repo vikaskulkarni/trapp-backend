@@ -41,6 +41,11 @@
       "size": "Large (42 in)",
       "priceRange": "400₹-600₹",
       "createdAt": "2024-11-24T23:51:22.033Z"
+    },
+    {
+      "name": "ds",
+      "size": "Medium (40 in)",
+      "priceRange": "400₹-600₹"
     }
   ],
   "slogans": [
@@ -111,6 +116,10 @@
     {
       "slogan": "QQW",
       "likes": 1
+    },
+    {
+      "slogan": "fds",
+      "likes": 0
     }
   ]
 }
