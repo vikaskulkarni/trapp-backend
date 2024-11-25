@@ -1,0 +1,116 @@
+{
+  "friendDetails": [
+    {
+      "id": 15,
+      "name": "Vikas K",
+      "size": "Small (38 in)",
+      "priceRange": "600₹-800₹",
+      "createdAt": "2024-11-24T22:41:33.011Z"
+    },
+    {
+      "id": 16,
+      "name": "df",
+      "size": "Medium (40 in)",
+      "priceRange": "",
+      "createdAt": "2024-11-24T22:42:45.237Z"
+    },
+    {
+      "id": 17,
+      "name": "vxcv",
+      "size": "Small (38 in)",
+      "priceRange": "400₹-600₹",
+      "createdAt": "2024-11-24T23:25:07.223Z"
+    },
+    {
+      "id": 18,
+      "name": "sdf",
+      "size": "Small (38 in)",
+      "priceRange": "",
+      "createdAt": "2024-11-24T23:40:38.341Z"
+    },
+    {
+      "id": 19,
+      "name": "rew",
+      "size": "Small (38 in)",
+      "priceRange": "400₹-600₹",
+      "createdAt": "2024-11-24T23:46:49.832Z"
+    },
+    {
+      "id": 20,
+      "name": "sfdfQQ",
+      "size": "Large (42 in)",
+      "priceRange": "400₹-600₹",
+      "createdAt": "2024-11-24T23:51:22.033Z"
+    }
+  ],
+  "slogans": [
+    {
+      "slogan": "Work can wait, the Life won't",
+      "likes": 0
+    },
+    {
+      "slogan": "The only thing we do on time: Vacation",
+      "likes": 0
+    },
+    {
+      "slogan": "Life's too short to stay in one place",
+      "likes": 0
+    },
+    {
+      "slogan": "ಕೊನೆಯಲ್ಲಿ, ನಾವು ಕಳೆದುಕೊಂಡ ಅವಕಾಶಗಳಿಗಾಗಿ ಮಾತ್ರ ಕಳವಳಗೊಳ್ಳುತ್ತೇವೆ",
+      "likes": 0
+    },
+    {
+      "slogan": "Living the Dream, Ignoring the Reality",
+      "likes": 0
+    },
+    {
+      "slogan": "Forever Young, Forever Free",
+      "likes": 0
+    },
+    {
+      "slogan": "I am Exploring the World, My AI is handling my Workload",
+      "likes": 0
+    },
+    {
+      "slogan": "ಪದೇ ಪದೇ Trip ಹೋಗೋದು ತಣ್ಣೀರ್ ಸ್ನಾನ ಮಾಡ್ಧಾಂಗೆ, ವಂದು ಎರಡು ತಂಬಿಗೆ ಹಾಕೊಳ್ಳೋ ವರೆಗೂ ಕಷ್ಟ, ಅದಾದ್ಮೇಲೆ ಅಭ್ಯಾಸ ಆಗೋಗತ್ತೆ",
+      "likes": 1
+    },
+    {
+      "slogan": "Travel is Real, Work is Illusion",
+      "likes": 1
+    },
+    {
+      "slogan": "test",
+      "likes": 0
+    },
+    {
+      "slogan": "fghfgh",
+      "likes": 0
+    },
+    {
+      "slogan": "hgjghj",
+      "likes": 0
+    },
+    {
+      "slogan": "gvfsdfg",
+      "likes": 0
+    },
+    {
+      "slogan": "dgdfgfdgfd",
+      "likes": 0
+    },
+    {
+      "slogan": "rtert",
+      "likes": 0
+    },
+    {
+      "slogan": "sdfsdfsdf",
+      "likes": 0
+    },
+    {
+      "slogan": "QQW",
+      "likes": 1
+    }
+  ]
+}
