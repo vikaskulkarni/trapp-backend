@@ -15,8 +15,8 @@ export class FriendsService {
     friend: Partial<FriendDetails>,
   ): Promise<FriendDetails | { error: string }> {
     const friendCount = await this.friendsRepository.count();
-    if (friendCount >= 25) {
-      return { error: 'Only 25 friends are allowed' };
+    if (friendCount >= 30) {
+      return { error: 'Only 30 friends are allowed' };
     }
     const newFriend = this.friendsRepository.create(friend);
     const { email, ...sanitizedFriend } = newFriend;

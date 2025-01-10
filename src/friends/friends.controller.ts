@@ -20,6 +20,8 @@ export class FriendsController {
       name: friend.name,
       size: friend.size,
       email: friend.email,
+      type: friend.type,
+      color: friend.color,
       priceRange: friend.priceRange,
     }));
   }

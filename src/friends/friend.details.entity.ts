@@ -19,6 +19,12 @@ export class FriendDetails {
   @Column()
   email: string;
 
+  @Column()
+  type: string;
+
+  @Column()
+  color: string;
+
   @Column({ nullable: true })
   priceRange: string | null;
 
